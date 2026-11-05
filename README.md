@@ -104,14 +104,12 @@ La gráfica agrupa los cursos y credenciales mencionados en mi CV, ordenados de 
       <br><br>
       <code>Coming soon...</code>
       <br><br>
-      <sub>Data · Software · QA</sub>
     </td>
     <td width="50%" align="center">
       <strong>Proyectos personales</strong>
       <br><br>
       <code>Coming soon...</code>
       <br><br>
-      <sub>Cybersecurity · Automation · Labs</sub>
     </td>
   </tr>
 </table>
