@@ -12,13 +12,18 @@
     THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   -->
   <defs>
-    <filter id="grayscale" color-interpolation-filters="sRGB">
-      <feColorMatrix type="saturate" values="0"/>
+    <filter id="soft-color" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values="0.62"/>
+      <feComponentTransfer>
+        <feFuncR type="gamma" amplitude="1" exponent="0.82" offset="0"/>
+        <feFuncG type="gamma" amplitude="1" exponent="0.82" offset="0"/>
+        <feFuncB type="gamma" amplitude="1" exponent="0.82" offset="0"/>
+      </feComponentTransfer>
     </filter>
   </defs>
   <g transform="translate(0 0)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#1C1715" stroke="#4E3A32"/>
+    <g filter="url(#soft-color)">
       <svg x="34" width="32" y="7" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="256" height="256" rx="60" fill="#FF6C37"/>
       <path d="M169.061 88.6123L118.521 139.153L104.268 124.901C153.971 75.1986 158.882 79.5101 169.061 88.6123Z" fill="#EEEEEE"/>
@@ -46,8 +51,8 @@
     <text x="50" y="54" fill="#F1F1F1" font-family="system-ui,Segoe UI,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Postman</text>
   </g>
   <g transform="translate(108 0)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#151A23" stroke="#344662"/>
+    <g filter="url(#soft-color)">
       <svg x="34" width="32" y="7" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M196 0H60C26.8629 0 0 26.8629 0 60V196C0 229.137 26.8629 256 60 256H196C229.137 256 256 229.137 256 196V60C256 26.8629 229.137 0 196 0Z" fill="#242938"/>
       <path d="M218.011 41.5669H123.418C123.418 52.8917 127.917 63.7527 135.925 71.7606C143.933 79.7685 154.794 84.2673 166.119 84.2673H183.544V101.091C183.559 124.653 202.655 143.749 226.216 143.765V49.7728C226.216 45.2421 222.544 41.5669 218.011 41.5669Z" fill="#2684FF"/>
@@ -68,8 +73,8 @@
     <text x="50" y="54" fill="#F1F1F1" font-family="system-ui,Segoe UI,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Jira</text>
   </g>
   <g transform="translate(216 0)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#141B19" stroke="#334940"/>
+    <g filter="url(#soft-color)">
       <svg x="34" width="32" y="7" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#cypress-dark-clip0_36_1190)">
       <path d="M196 0H60C26.8629 0 0 26.8629 0 60V196C0 229.137 26.8629 256 60 256H196C229.137 256 256 229.137 256 196V60C256 26.8629 229.137 0 196 0Z" fill="#242938"/>
@@ -101,8 +106,8 @@
     <text x="50" y="54" fill="#F1F1F1" font-family="system-ui,Segoe UI,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Cypress</text>
   </g>
   <g transform="translate(324 0)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#1B1918" stroke="#473C3A"/>
+    <g filter="url(#soft-color)">
       <svg x="34" width="32" y="7" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="256" height="256" rx="50" fill="#242938"/>
       <path d="M103.878 172.836V158.363L63.6658 169.766C63.6658 169.766 66.6372 152.501 87.6087 146.552C93.9687 144.75 99.3952 144.762 103.878 145.628V86.2645H124.012C121.82 79.4903 119.699 74.2748 117.918 70.651C114.971 64.6529 111.951 68.629 105.093 74.3645C100.264 78.3994 88.0571 87.0071 69.6888 91.9568C51.3201 96.9097 36.4701 95.5961 30.2741 94.5232C21.4901 93.0078 16.8957 91.0787 17.3255 97.76C17.6996 103.653 19.1033 112.79 22.3188 124.857C29.2754 150.989 52.2662 201.343 95.7158 189.64C107.065 186.582 115.076 180.537 120.629 172.833H103.878V172.836ZM38.9899 125.215L69.8681 117.081C69.8681 117.081 68.9681 128.96 57.3925 132.012C45.8136 135.06 38.9899 125.215 38.9899 125.215Z" fill="#E2574C"/>

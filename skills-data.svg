@@ -12,13 +12,18 @@
     THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   -->
   <defs>
-    <filter id="grayscale" color-interpolation-filters="sRGB">
-      <feColorMatrix type="saturate" values="0"/>
+    <filter id="soft-color" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values="0.62"/>
+      <feComponentTransfer>
+        <feFuncR type="gamma" amplitude="1" exponent="0.82" offset="0"/>
+        <feFuncG type="gamma" amplitude="1" exponent="0.82" offset="0"/>
+        <feFuncB type="gamma" amplitude="1" exponent="0.82" offset="0"/>
+      </feComponentTransfer>
     </filter>
   </defs>
   <g transform="translate(0 0)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#151B19" stroke="#344A42"/>
+    <g filter="url(#soft-color)">
       <svg x="34" width="32" y="7" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#fabric-dark-clip0_35_49)">
       <path d="M196 0H60C26.8629 0 0 26.8629 0 60V196C0 229.137 26.8629 256 60 256H196C229.137 256 256 229.137 256 196V60C256 26.8629 229.137 0 196 0Z" fill="#242938"/>
@@ -96,8 +101,8 @@
     <text x="50" y="54" fill="#F1F1F1" font-family="system-ui,Segoe UI,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Microsoft Fabric</text>
   </g>
   <g transform="translate(108 0)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#1A1813" stroke="#49402E"/>
+    <g filter="url(#soft-color)">
       <svg x="34" width="32" y="7" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M196 0H60C26.8629 0 0 26.8629 0 60V196C0 229.137 26.8629 256 60 256H196C229.137 256 256 229.137 256 196V60C256 26.8629 229.137 0 196 0Z" fill="#242938"/>
       <g clip-path="url(#pbi-dark-clip0_120_2379)">
@@ -139,8 +144,8 @@
     <text x="50" y="54" fill="#F1F1F1" font-family="system-ui,Segoe UI,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Power BI</text>
   </g>
   <g transform="translate(216 0)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#1B1615" stroke="#4B3634"/>
+    <g filter="url(#soft-color)">
       <svg x="34" width="32" y="7" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#databricks-dark-clip0_653_2)">
       <path d="M196 0H60C26.8629 0 0 26.8629 0 60V196C0 229.137 26.8629 256 60 256H196C229.137 256 256 229.137 256 196V60C256 26.8629 229.137 0 196 0Z" fill="#242938"/>
@@ -156,8 +161,8 @@
     <text x="50" y="54" fill="#F1F1F1" font-family="system-ui,Segoe UI,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Databricks</text>
   </g>
   <g transform="translate(324 0)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#141B20" stroke="#334657"/>
+    <g filter="url(#soft-color)">
       <svg x="34" width="32" y="7" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" id="snowflake-dark-snowflake">
       <path d="M196 0H60C26.8629 0 0 26.8629 0 60V196C0 229.137 26.8629 256 60 256H196C229.137 256 256 229.137 256 196V60C256 26.8629 229.137 0 196 0Z" fill="#242938"/>
       <g clip-path="url(#snowflake-dark-clip0_5_8)">
@@ -173,22 +178,22 @@
     <text x="50" y="54" fill="#F1F1F1" font-family="system-ui,Segoe UI,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Snowflake</text>
   </g>
   <g transform="translate(0 72)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#151922" stroke="#34445D"/>
+    <g filter="url(#soft-color)">
       <svg xmlns="http://www.w3.org/2000/svg" x="34" width="32" y="7" height="32" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="#242938" rx="60"/><path fill="url(#azure-dark-paint0_linear_159_730)" d="M94.6743 34.0023H153.856L92.4196 216.032C91.7882 217.902 90.586 219.528 88.9824 220.679C87.3788 221.831 85.4545 222.45 83.4803 222.451H37.4223C35.9265 222.451 34.4522 222.095 33.1213 221.412C31.7904 220.729 30.6411 219.74 29.7687 218.525C28.8962 217.31 28.3256 215.905 28.104 214.425C27.8824 212.946 28.0162 211.435 28.4943 210.018L85.7327 40.4209C86.3639 38.5497 87.5662 36.9236 89.1703 35.7717C90.7744 34.6198 92.6995 34.0001 94.6743 34V34.0023Z"/><path fill="#0078D4" d="M180.674 156.095H86.8261C85.9536 156.094 85.101 156.356 84.3795 156.847C83.6579 157.337 83.1008 158.034 82.7807 158.845C82.4606 159.657 82.3923 160.546 82.5848 161.397C82.7773 162.248 83.2217 163.022 83.86 163.616L144.165 219.903C145.92 221.54 148.232 222.451 150.633 222.451H203.774L180.674 156.095Z"/><path fill="url(#azure-dark-paint1_linear_159_730)" d="M94.6745 34.0023C92.6781 33.9946 90.7315 34.6255 89.1192 35.8028C87.5068 36.98 86.3131 38.642 85.7125 40.5459L28.5649 209.863C28.0546 211.286 27.8944 212.81 28.0979 214.308C28.3013 215.805 28.8624 217.232 29.7337 218.466C30.6051 219.701 31.7609 220.708 33.1036 221.401C34.4463 222.095 35.9362 222.455 37.4474 222.451H84.6942C86.4539 222.136 88.0986 221.36 89.4603 220.202C90.822 219.044 91.8519 217.546 92.4448 215.859L103.841 182.273L144.549 220.241C146.255 221.652 148.395 222.433 150.608 222.451H203.551L180.331 156.096L112.642 156.112L154.07 34.0023H94.6745Z"/><path fill="url(#azure-dark-paint2_linear_159_730)" d="M170.264 40.4118C169.634 38.5435 168.434 36.9201 166.832 35.7702C165.23 34.6204 163.308 34.002 161.336 34.0022H95.3792C97.3508 34.0023 99.2727 34.6208 100.874 35.7707C102.476 36.9205 103.677 38.5437 104.307 40.4118L161.548 210.016C162.026 211.433 162.16 212.944 161.939 214.424C161.718 215.904 161.147 217.309 160.275 218.525C159.402 219.74 158.253 220.73 156.922 221.413C155.591 222.096 154.116 222.453 152.62 222.453H218.579C220.075 222.452 221.55 222.096 222.88 221.413C224.211 220.729 225.36 219.739 226.233 218.524C227.105 217.308 227.675 215.903 227.896 214.423C228.118 212.944 227.984 211.433 227.505 210.016L170.264 40.4118Z"/><defs><linearGradient id="azure-dark-paint0_linear_159_730" x1="116.244" x2="54.783" y1="47.967" y2="229.54" gradientUnits="userSpaceOnUse"><stop stop-color="#114A8B"/><stop offset="1" stop-color="#0669BC"/></linearGradient><linearGradient id="azure-dark-paint1_linear_159_730" x1="135.444" x2="121.227" y1="132.585" y2="137.392" gradientUnits="userSpaceOnUse"><stop stop-opacity=".3"/><stop offset=".071" stop-opacity=".2"/><stop offset=".321" stop-opacity=".1"/><stop offset=".623" stop-opacity=".05"/><stop offset="1" stop-opacity="0"/></linearGradient><linearGradient id="azure-dark-paint2_linear_159_730" x1="127.625" x2="195.091" y1="42.671" y2="222.414" gradientUnits="userSpaceOnUse"><stop stop-color="#3CCBF4"/><stop offset="1" stop-color="#2892DF"/></linearGradient></defs></svg>
     </g>
     <text x="50" y="54" fill="#F1F1F1" font-family="system-ui,Segoe UI,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Azure</text>
   </g>
   <g transform="translate(108 72)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#181A20" stroke="#3B4455"/>
+    <g filter="url(#soft-color)">
       <svg xmlns="http://www.w3.org/2000/svg" x="34" width="32" y="7" height="32" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="#242938" rx="60"/><path fill="url(#python-dark-paint0_linear_2_47)" d="M127.279 29C76.5066 29 79.6772 51.018 79.6772 51.018L79.7338 73.8284H128.185V80.6772H60.4893C60.4893 80.6772 28 76.9926 28 128.222C28 179.452 56.3573 177.636 56.3573 177.636H73.2812V153.863C73.2812 153.863 72.369 125.506 101.186 125.506H149.24C149.24 125.506 176.239 125.942 176.239 99.4123V55.5461C176.239 55.5461 180.338 29 127.279 29ZM100.563 44.339C105.384 44.339 109.28 48.2351 109.28 53.0556C109.28 57.8761 105.384 61.7723 100.563 61.7723C95.7426 61.7723 91.8465 57.8761 91.8465 53.0556C91.8465 48.2351 95.7426 44.339 100.563 44.339Z"/><path fill="url(#python-dark-paint1_linear_2_47)" d="M128.721 227.958C179.493 227.958 176.323 205.941 176.323 205.941L176.266 183.13H127.815V176.281H195.511C195.511 176.281 228 179.966 228 128.736C228 77.5062 199.643 79.323 199.643 79.323H182.719V103.096C182.719 103.096 183.631 131.453 154.814 131.453H106.76C106.76 131.453 79.7607 131.016 79.7607 157.546V201.412C79.7607 201.412 75.6615 227.958 128.721 227.958ZM155.437 212.619C150.616 212.619 146.72 208.723 146.72 203.903C146.72 199.082 150.616 195.186 155.437 195.186C160.257 195.186 164.154 199.082 164.154 203.903C164.154 208.723 160.257 212.619 155.437 212.619Z"/><defs><linearGradient id="python-dark-paint0_linear_2_47" x1="47.22" x2="146.333" y1="46.896" y2="145.02" gradientUnits="userSpaceOnUse"><stop stop-color="#387EB8"/><stop offset="1" stop-color="#366994"/></linearGradient><linearGradient id="python-dark-paint1_linear_2_47" x1="108.056" x2="214.492" y1="109.905" y2="210.522" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE052"/><stop offset="1" stop-color="#FFC331"/></linearGradient></defs></svg>
     </g>
     <text x="50" y="54" fill="#F1F1F1" font-family="system-ui,Segoe UI,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Python</text>
   </g>
   <g transform="translate(216 72)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#1B1714" stroke="#49382E"/>
+    <g filter="url(#soft-color)">
       <svg x="34" width="32" y="7" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M196 0H60C26.8629 0 0 26.8629 0 60V196C0 229.137 26.8629 256 60 256H196C229.137 256 256 229.137 256 196V60C256 26.8629 229.137 0 196 0Z" fill="#242938"/>
       <path d="M121.7 21.0029C119.451 21.0664 117.229 22.137 115.371 24.2008C114.35 25.3378 113.483 26.6912 112.764 28.0257C110.89 31.5381 110.521 35.5139 109.827 39.3666L106.009 61.0065C105.862 61.8558 105.481 62.2071 104.72 62.4501L76.695 71.3601C74.6528 72.0279 72.6055 72.8911 70.7992 74.039C65.2891 77.5415 64.4741 83.3042 68.6112 88.3644C70.4374 90.6029 72.7909 92.1775 75.4023 93.3215L92.8538 101.103C92.9995 101.183 93.1551 101.234 93.3128 101.264L96.9978 103.925C96.9978 103.925 93.3296 144.554 100.216 147.365C100.155 147.355 99.8094 147.283 99.8094 147.283C99.8094 147.283 100.507 148.038 102.39 147.816C103.831 148.084 103.641 148.04 102.463 147.806C105.024 147.475 109.737 145.329 117.907 137.106C118.508 136.567 119.095 136.013 119.668 135.443L137.315 116.376L141.442 117.83C141.591 118.035 141.806 118.167 142.15 118.269L161.802 124.253C164.488 125.083 167.145 125.69 170.008 125.271C175.12 124.522 178.882 120.31 178.831 115.159C178.811 112.897 178.018 110.854 176.977 108.884L163.962 84.1803C163.548 83.3995 163.561 82.8944 164.157 82.1959L186.021 56.4761C187.437 54.7864 188.715 52.9746 189.456 50.8751C191.085 46.2415 188.978 42.5585 184.172 41.6586C181.962 41.2637 179.783 41.472 177.629 42.0406L146.304 50.3701C145.382 50.6181 144.926 50.4445 144.425 49.6041L131.636 28.3373C130.669 26.7349 129.514 25.1682 128.189 23.8456C126.227 21.882 123.95 20.9404 121.7 21.0029ZM122.636 40.585C123.142 40.9402 123.398 41.3063 123.637 41.7012L137.398 64.6508C137.777 65.2739 138.117 65.4942 138.87 65.2938L163.103 58.8475L168.937 57.3195C168.851 57.8086 168.638 58.1033 168.405 58.3791L148.418 81.8665C147.853 82.5492 147.801 83.0274 148.226 83.8271L160.859 107.799L161.439 109.026L161.424 109.046L138.893 102.831L138.887 102.813L134.626 101.617L109.353 129.653L113.975 92.7926L109.827 90.9868L109.835 90.9799L86.3651 81.6532C86.8152 81.2434 87.2177 81.0728 87.639 80.9418L116.168 71.9167C116.839 71.7084 117.22 71.4504 117.284 70.6844L117.683 68.3478L121.525 46.7109L122.636 40.585Z" fill="#E15919"/>
@@ -199,8 +204,8 @@
     <text x="50" y="54" fill="#F1F1F1" font-family="system-ui,Segoe UI,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">PySpark</text>
   </g>
   <g transform="translate(324 72)">
-    <rect x="1" y="1" width="98" height="62" rx="9" fill="#111111" stroke="#363636"/>
-    <g filter="url(#grayscale)">
+    <rect x="1" y="1" width="98" height="62" rx="9" fill="#161923" stroke="#3B4258"/>
+    <g filter="url(#soft-color)">
       <svg xmlns="http://www.w3.org/2000/svg" x="34" width="32" y="7" height="32" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="#242938" rx="60"/><g clip-path="url(#r-dark-clip0_101_254)"><path fill="url(#r-dark-paint0_linear_101_254)" fill-rule="evenodd" d="M127.849 185.237C72.8422 185.237 28.2502 155.372 28.2502 118.533C28.2502 81.6931 72.8422 51.8287 127.849 51.8287C182.856 51.8287 227.447 81.6931 227.447 118.533C227.447 155.372 182.856 185.237 127.849 185.237ZM143.094 77.9077C101.284 77.9077 67.3906 98.3243 67.3906 123.509C67.3906 148.694 101.284 169.111 143.094 169.111C184.904 169.111 215.759 155.153 215.759 123.509C215.759 91.876 184.904 77.9077 143.094 77.9077Z" clip-rule="evenodd"/><path fill="url(#r-dark-paint1_linear_101_254)" fill-rule="evenodd" d="M179.934 155.144C179.934 155.144 185.962 156.963 189.464 158.735C190.679 159.35 192.782 160.577 194.298 162.188C195.784 163.766 196.508 165.365 196.508 165.365L220.265 205.42L181.868 205.437L163.912 171.718C163.912 171.718 160.235 165.401 157.972 163.569C156.085 162.041 155.28 161.497 153.414 161.497C152.116 161.497 144.291 161.497 144.291 161.497L144.298 205.413L110.321 205.427V93.2481H178.553C178.553 93.2481 209.63 93.8086 209.63 123.376C209.63 152.943 179.934 155.144 179.934 155.144ZM165.155 117.581L144.585 117.568L144.575 136.643L165.155 136.636C165.155 136.636 174.685 136.606 174.685 126.933C174.685 117.065 165.155 117.581 165.155 117.581Z" clip-rule="evenodd"/></g><defs><linearGradient id="r-dark-paint0_linear_101_254" x1="28.25" x2="151.612" y1="51.829" y2="236.026" gradientUnits="userSpaceOnUse"><stop stop-color="#CBCED0"/><stop offset="1" stop-color="#84838B"/></linearGradient><linearGradient id="r-dark-paint1_linear_101_254" x1="110.321" x2="222.487" y1="93.248" y2="203.17" gradientUnits="userSpaceOnUse"><stop stop-color="#276DC3"/><stop offset="1" stop-color="#165CAA"/></linearGradient><clipPath id="r-dark-clip0_101_254"><rect width="200" height="154.972" fill="#fff" transform="translate(28 51)"/></clipPath></defs></svg>
     </g>
     <text x="50" y="54" fill="#F1F1F1" font-family="system-ui,Segoe UI,sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">R</text>
