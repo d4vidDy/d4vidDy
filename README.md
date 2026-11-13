@@ -111,23 +111,16 @@ La gráfica agrupa los cursos y credenciales mencionados en mi CV, ordenados de 
 
 ## Repositorios y proyectos
 
-<table align="center">
-  <tr>
-    <td width="50%" align="center">
-      <strong>Repositorios destacados</strong>
-      <br><br>
-      <code>Coming soon...</code>
-      <br><br>
-    </td>
-    <td width="50%" align="center">
-      <strong>Proyectos personales</strong>
-      <br><br>
-      <code>Coming soon...</code>
-      <br><br>
-    </td>
-  </tr>
-</table>
+### Zapzipstadt
 
-<div align="center">
-  <sub>More projects are coming soon...</sub>
-</div>
+<p align="center">
+  <a href="https://d4viddy.github.io/Zapzipstadt/">
+    <img src="./Zapzipstadt.png" width="760" alt="Portada de Zapzipstadt con los Michien, Yuki en su ovni y el tren eléctrico" />
+  </a>
+</p>
+
+Sitio web interactivo en alemán sobre una ciudad sostenible ficticia. Incluye una línea de tiempo histórica, un mapa isométrico con cinco lugares y un comparativo con Copenhague y Singapur.
+
+**Tecnologías** · React, Vite, CSS y Lenis. Despliegue automatizado con GitHub Actions en GitHub Pages.
+
+[Ver sitio web](https://d4viddy.github.io/Zapzipstadt/) · [Ver código fuente](https://github.com/d4vidDy/Zapzipstadt)
